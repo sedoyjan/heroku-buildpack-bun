@@ -44,4 +44,6 @@ then
   echo "Installing dependencies..."
   cd $BUILD_DIR
   bun install
+  echo "Generate Prisma client..."
+  bun prisma generate
 fi
